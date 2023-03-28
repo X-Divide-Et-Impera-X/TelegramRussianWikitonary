@@ -41,7 +41,6 @@ def nigger(message):
 
 @bot.callback_query_handler(func=lambda call: True)
 def callback_query(call):
-	print(call)
 	bot.edit_message_text(get_definition(call.data), call.message.chat.id, call.message.id, reply_markup=call.message.reply_markup)
 
 
